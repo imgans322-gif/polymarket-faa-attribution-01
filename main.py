@@ -38,8 +38,9 @@
 # case's future was fetched from Polymarket's public price history and
 # reproduces the published baseline exactly -- see the work notes). On
 # those six cases this program loses 0.268600 against the house baseline's
-# 0.363589 (median error 0.675, 90% coverage 0.901 -- essentially the
-# nominal 0.90). About a hundred configurations were tried; the ones that
+# 0.363589 (median error 0.767503, the same as the baseline's -- both centre
+# the median on the checkpoint price, so the whole gain is in the spread;
+# 90% coverage 0.901 -- essentially the nominal 0.90). About a hundred configurations were tried; the ones that
 # lost are worth naming so nobody re-tries them: a drift term at any
 # shrinkage (momentum is noise here), an additive linear jump term, the
 # standard deviation of changes instead of the mean absolute change,
